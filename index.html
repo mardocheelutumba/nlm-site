@@ -3,42 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Nlm Lutumba Mardochée</title>
+    <title>Site de Nlm Lutumba Mardochée</title>
+    <meta name="description" content="Le site de Nlm Lutumba Mardochée, étudiant passionné par l'informatique et les technologies.">
+
     <style>
+        /* Style général du site */
         body {
-            font-family: Arial, sans-serif;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Barre de navigation */
+        nav {
+            background-color: #4CAF50;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
         }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
+
+        nav ul li {
             margin: 0 15px;
-            text-decoration: none;
         }
-        nav a:hover {
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
             text-decoration: underline;
         }
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            background-color: white;
-            margin-top: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #333;
+
+        /* Style de l'en-tête */
+        header {
+            background-color: #4CAF50;
             color: white;
             text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Style des sections */
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Pied de page */
+        footer {
+            text-align: center;
             padding: 10px;
+            background-color: #333;
+            color: white;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -47,42 +83,80 @@
 </head>
 <body>
 
-    <header>
-        <h1>Nlm Lutumba Mardochée</h1>
-        <nav>
-            <a href="#accueil">Accueil</a> |
-            <a href="#blog">Blog</a> |
-            <a href="#contact">Contact</a>
-        </nav>
+    <!-- Barre de navigation -->
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#historique">Historique</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- En-tête -->
+    <header id="accueil">
+        <h1>Bienvenue sur le site de Nlm Lutumba Mardochée</h1>
+        <p>Étudiant passionné par l'informatique, le développement web, et les outils numériques.</p>
     </header>
 
-    <section id="accueil">
-        <h2>Bienvenue</h2>
-        <p>Je suis <strong>Mardochée Lutumba</strong>, passionné par l'informatique. Voici mon premier site web !</p>
-    </section>
-
+    <!-- Section Blog -->
     <section id="blog">
         <h2>Blog</h2>
-        <p>Je propose des services et formations dans les domaines suivants :</p>
+        <p>Ici, je partage mes expériences et découvertes dans le domaine de l'informatique.</p>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about">
+        <h2>À propos de moi</h2>
         <ul>
-            <li><strong>Informatique :</strong> Assistance technique, développement web, apprentissage d'outils comme Excel et Word.</li>
-            <li><strong>Programmation :</strong> Initiation à Python et HTML.</li>
-            <li><strong>Design :</strong> Maîtrise de Photoshop et Lightroom.</li>
+            <li>Assistance technique en informatique</li>
+            <li>Développement web (HTML, CSS, initiation à Python)</li>
+            <li>Maîtrise d'outils comme Excel et Word</li>
+            <li>Photoshop et Lightroom</li>
         </ul>
     </section>
 
+    <!-- Section Historique et parcours scolaire -->
+    <section id="historique">
+        <h2>Historique et Parcours scolaire</h2>
+        <h3>Parcours scolaire</h3>
+        <ul>
+            <li>**École primaire** :  
+                - 1re à 4e année : EP13 Ngiri-Ngiri  
+                - 5e année : Collège Sainte-Roumanie  
+                - 6e année : Certificat obtenu à G.S Wozo  
+            </li>
+            <li>**École secondaire** :  
+                - 1re et 2e années : G.S Wozo  
+                - **Humanités** :  
+                    - 3e année : Groupe Scolaire Wozo  
+                    - 4e année : Sainte-Marie Mère du Rédempteur  
+                    - 5e et 6e années : Diplôme d’État obtenu  
+            </li>
+        </ul>
+
+        <h3>Remerciements</h3>
+        <p>Je remercie chaleureusement ma famille pour son soutien indéfectible :</p>
+        <ul>
+            <li>**Parents** : Ezéchiel lutumba et Eugénie Nzinunu</li>
+            <li>**Grands frères** : Noé Lutumba, Michée Nzinunu, Mike Lutumba, Deograsias Malumba</li>
+            <li>**Grandes sœurs** : Gloria Mayimona, Dorcas Mafuta, Naomie Diampova</li>
+            <li>**Et enfin** : Nlm Lutumba & Esther Lutumba</li>
+        </ul>
+    </section>
+
+    <!-- Section Contact -->
     <section id="contact">
         <h2>Contact</h2>
-        <ul>
-            <li><strong>Email :</strong> <a href="mailto:nsimbalutumbamardochee@gmail.com">nsimbalutumbamardochee@gmail.com</a></li>
-            <li><strong>Téléphone :</strong> +243 892 420 927</li>
-            <li><strong>WhatsApp :</strong> <a href="https://wa.me/243892420927" target="_blank">Envoyer un message sur WhatsApp</a></li>
-            <li><strong>Facebook :</strong> <a href="https://www.facebook.com/NlmLutumbaMardochee" target="_blank">Nlm Lutumba Mardochée</a></li>
-        </ul>
+        <p>WhatsApp : <a href="https://wa.me/243892420927" target="_blank">+243 892 420 927</a></p>
+        <p>Facebook : <a href="https://www.facebook.com/nlm.lutumba.mardochee" target="_blank">Nlm Lutumba Mardochée</a></p>
+        <p>Email : <a href="mailto:nsimbalutumbamardochee@gmail.com">nsimbalutumbamardochee@gmail.com</a></p>
     </section>
 
+    <!-- Pied de page -->
     <footer>
-        <p>&copy; 2024 Nlm Lutumba Mardochée. Tous droits réservés.</p>
+        <p>&copy; 2024 Nlm Lutumba Mardochée - Tous droits réservés.</p>
     </footer>
 
 </body>
